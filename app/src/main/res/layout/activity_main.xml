@@ -25,7 +25,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="410dp"
-        android:layout_height="680dp"
+        android:layout_height="780dp"
         app:cardBackgroundColor="@color/background"
         app:layout_constraintTop_toBottomOf="@+id/cardview"
         tools:ignore="MissingConstraints">

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initComponents(){
-        btnAppConsumos =findViewById(R.id.btnAppConsumos)
+        btnAppConsumos = findViewById(R.id.btnAppConsumos)
     }
 
     private fun navigateConsumos(){
