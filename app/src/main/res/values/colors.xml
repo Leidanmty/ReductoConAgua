@@ -11,4 +11,5 @@
     <color name="background">#066699</color>
     <color name="tint_azul">#0a5483</color>
     <color name="azul_fuerte">#02416d</color>
+    <color name="none">#00FFFFFF</color>
 </resources>

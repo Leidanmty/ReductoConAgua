@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingHorizontal="56dp"
+    android:paddingVertical="32dp"
+    tools:context=".LoginActivity">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MasAgua"
+                android:textColor="@color/white"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="32dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_droplet"
+                app:tint="@color/white"
+                android:layout_marginBottom="32dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sesion"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingHorizontal="30dp"
+        app:cardBackgroundColor="@color/card_transparency"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario:"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="20dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="40dp"
+            android:layout_marginTop="80dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnentrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sesion"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="30dp"
+        >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/barra_titulo"
+            android:text="Entrar"
+            android:textSize="28dp"
+            android:textColor="@color/azul_fuerte"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnentrar"
+        app:layout_constraintRight_toRightOf="@+id/btnentrar"
+        app:layout_constraintLeft_toLeftOf="@+id/btnentrar"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="30dp"
+        android:outlineAmbientShadowColor="@color/none"
+        >
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/background"
+            android:text="Registrarse"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
